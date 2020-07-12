@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Settings</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,800" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container-fluid main-section">
+    <div class="left-sidebar">
+        <header class="site-header">
+            <a class="logo" href="#">Logo</a>
+        </header>
+        <nav class="left-nav">
+            <ul>
+                <li><a href="#"><i class="fa fa-server fa-fw"></i>Dashboard</a></li>
+                <li><a href="#"><i class="fa fa-calendar fa-fw"></i>Calendar</a></li>
+                <li><a href="#"><i class="fa fa-users fa-fw"></i>Teams</a></li>
+                <li><a href="#"><i class="fa fa-tasks fa-fw"></i>Tasks</a></li>
+                <li><a href="#" class="active"><i class="fa fa-cog fa-fw"></i>Settings</a></li>
+                <li>
+                    <div class="card card-calendar">
+                        <div class="card-header">
+                            Upcoming meetings
+                        </div>
+                        <div class="card-body">
+                            <div class="card-meeting">
+                                <h6 class="card-meeting-title">Design review meeting</h6>
+                                <p class="card-meeting-time"><i class="fa fa-clock-o fa-fw"></i>9:00 - 10:00 AM</p>
+                                <div class="row">
+                                    <div class="col-sm-6 img-wrap">
+                                        <img class="meeting-avatar" src="images/avatar.jpeg" alt="avatar">
+                                        <img class="meeting-avatar" src="images/avatar.jpeg" alt="avatar">
+                                        <img class="meeting-avatar" src="images/avatar.jpeg" alt="avatar">
+                                    </div>
+                                    <span class="col-sm-6 card-meeting-number">+5 more</span>
+                                </div>
+                            </div>
+                            <div class="card-meeting">
+                                <h6 class="card-meeting-title">Demo</h6>
+                                <p class="card-meeting-time"><i class="fa fa-clock-o fa-fw"></i>9:00 - 10:00 AM</p>
+                                <div class="row">
+                                    <div class="col-sm-6 img-wrap">
+                                        <img class="meeting-avatar" src="images/avatar.jpeg" alt="avatar">
+                                        <img class="meeting-avatar" src="images/avatar.jpeg" alt="avatar">
+                                        <img class="meeting-avatar" src="images/avatar.jpeg" alt="avatar">
+                                    </div>
+                                    <span class="col-sm-6 card-meeting-number">+5 more</span>
+                                </div>
+                            </div>
+                            <div class="card-meeting">
+                                <h6 class="card-meeting-title">Zoom conferencing</h6>
+                                <p class="card-meeting-time"><i class="fa fa-clock-o fa-fw"></i>9:00 - 10:00 AM</p>
+                                <div class="row">
+                                    <div class="col-sm-6 img-wrap">
+                                        <img class="meeting-avatar" src="images/avatar.jpeg" alt="avatar">
+                                        <img class="meeting-avatar" src="images/avatar.jpeg" alt="avatar">
+                                        <img class="meeting-avatar" src="images/avatar.jpeg" alt="avatar">
+                                    </div>
+                                    <span class="col-sm-6 card-meeting-number">+5 more</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fa fa-sign-out fa-fw"></i>Log out</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="right-content">
+        <div class="top-nav-container">
+            <div class="row">
+                <form class="search-form col-sm-5" role="search">
+                    <div class="input-group">
+                        <button type="submit" class="fa fa-search"></button>
+                        <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                    </div>
+                </form>
+                <nav class="top-nav col-sm-6">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item bell"><a href="#"><i class="fa fa-bell-o fa-fw"></i><span
+                                class="badge badge-primary">2</span></a></li>
+                        <li class="nav-item dropdown media">
+                            <img class="nav-user-img align-self-end mr-3" src="images/avatar.jpeg" alt="avatar">
+                            <div class="media-body pt-2">
+                                <a class="nav-link dropdown-toggle nav-user" data-toggle="dropdown" href="#"
+                                   role="button" aria-haspopup="true" aria-expanded="false">Adam Jones</a>
+                                <p class="user-mail">test1@gmail.com</p>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="main-content">
+            <h2 class="pt-4 pl-4">Settings</h2>
+            <nav class="nav-custom p-4">
+                <ul class="nav nav-tabs nav-tabs-custom" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="general-tab" data-toggle="tab" href="#general" role="tab"
+                           aria-controls="general" aria-selected="true">General</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="organization-tab" data-toggle="tab" href="#organization" role="tab"
+                           aria-controls="organization" aria-selected="false">Organization</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="linking-tab" data-toggle="tab" href="#linking" role="tab"
+                           aria-controls="linking" aria-selected="false">Linking</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="roles-tab" data-toggle="tab" href="#roles" role="tab"
+                           aria-controls="general" aria-selected="true">Roles</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="notifications-tab" data-toggle="tab" href="#notifications" role="tab"
+                           aria-controls="organization" aria-selected="false">Notification</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="meeting-tab" data-toggle="tab" href="#meeting" role="tab"
+                           aria-controls="linking" aria-selected="false">Meeting Configuration</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade" id="general" role="tabpanel" aria-labelledby="general-tab">General</div>
+                    <div class="tab-pane fade" id="organization" role="tabpanel" aria-labelledby="organization-tab">
+                        ...
+                    </div>
+                    <div class="tab-pane fade" id="linking" role="tabpanel" aria-labelledby="linking-tab">...</div>
+                    <div class="tab-pane fade" id="roles" role="tabpanel" aria-labelledby="roles-tab">...</div>
+                    <div class="tab-pane fade" id="notifications" role="tabpanel" aria-labelledby="notifications-tab">
+                        ...
+                    </div>
+                    <div class="tab-pane fade show active" id="meeting" role="tabpanel" aria-labelledby="meeting-tab">
+                        <div class="row py-4">
+                            <div class="col-sm-6 mb-5">
+                                <h3 class="meeting-tab-title mb-4">Story point meeting</h3>
+                                <h5 class="meeting-tab-subtitle mb-4">Default stories painting values</h5>
+                                <button id="point-btn" class="meeting-tab-button">add new <span class="button-plus">+</span></button>
+                                <div class="meeting-tab-inputs">
+                                    <div class="meeting-tab-input-wrap">
+                                        <input class="meeting-tab-input" type="text" value="1">
+                                        <button class="meeting-tab-close">x</button>
+                                    </div>
+                                    <div class="meeting-tab-input-wrap">
+                                        <input class="meeting-tab-input" type="text" value="3">
+                                        <button class="meeting-tab-close">x</button>
+                                    </div>
+                                    <div class="meeting-tab-input-wrap">
+                                        <input class="meeting-tab-input" type="text" value="5">
+                                        <button class="meeting-tab-close">x</button>
+                                    </div>
+                                    <div class="meeting-tab-input-wrap">
+                                        <input class="meeting-tab-input" type="text" value="7">
+                                        <button class="meeting-tab-close">x</button>
+                                    </div>
+                                    <div class="meeting-tab-input-wrap">
+                                        <input class="meeting-tab-input" type="text" value="13">
+                                        <button class="meeting-tab-close">x</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 mb-5">
+                                <h3 class="meeting-tab-title mb-4">Retrospective meeting</h3>
+                                <h5 class="meeting-tab-subtitle mb-4">Default sections</h5>
+                                <button id="retro-btn" class="meeting-tab-button">add new <span class="button-plus">+</span></button>
+                                <div class="meeting-tab-inputs-second">
+                                    <div class="meeting-tab-input-wrap-second">
+                                        <input class="meeting-tab-input-second" type="text" value="Went well">
+                                        <button class="meeting-tab-close">x</button>
+                                    </div>
+                                    <div class="meeting-tab-input-wrap-second">
+                                        <input class="meeting-tab-input-second" type="text" value="Went not well">
+                                        <button class="meeting-tab-close">x</button>
+                                    </div>
+                                    <div class="meeting-tab-input-wrap-second">
+                                        <input class="meeting-tab-input-second" type="text" value="Action item">
+                                        <button class="meeting-tab-close">x</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="save-button ml-auto">save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+<script src="js/settings.js"></script>
+</body>
+</html>
